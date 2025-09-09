@@ -16,22 +16,27 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="theme.js" defer></script>
   </head>
+
   <body>
     <!-- Navigation -->
     <nav class="container">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#connect">Connect</a></li>
       </ul>
       <ul>
-        <label for="">
-          <input type="checkbox" role="switch" id="theme-toggel" />
-        </label>
-        <label>🌙</label>
+        <li>
+          <label>
+            <input type="checkbox" role="switch" id="theme-toggle" />
+            🌙
+          </label>
+        </li>
       </ul>
     </nav>
+
+    <!-- About Section -->
     <header class="container" id="about">
       <hgroup>
         <h1>Tushar Kumar</h1>
@@ -39,25 +44,138 @@
       </hgroup>
       <hr />
       <p>
-        Passionate about building web application with modern technologies such
-        as React JS , Vanilla JS, Express , Node JS, MongoDb to create
-        full-stack application.
+        Passionate about building web applications with modern technologies such
+        as React JS, Vanilla JS, Express, Node JS, and MongoDB to create
+        full-stack solutions.
       </p>
       <p>
-        <a href="connect" role="button">Contact Me</a>
-        <a href="#about" role="button" class="secondary">Resume</a>
+        <a href="#connect" role="button">Contact Me</a>
+        <a href="#" role="button" class="secondary">Resume</a>
       </p>
     </header>
 
     <main class="container">
-      <section id="Projects">
+      <!-- Project 7: Company Database -->
+
+      <!-- Projects Section -->
+      <section id="projects">
         <hgroup>
           <h2>My Projects</h2>
-          <h3>What i've been work lately</h3>
+          <h3>What I've been working on lately</h3>
         </hgroup>
         <hr />
+
         <div class="grid">
-          <!-- //this is my project 1 -->
+          <!-- Project 7: Company Database -->
+          <group>
+            <figure>
+              <img
+                src="https://picsum.photos/id/378/800/400"
+                alt="Company Database Project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Company Database</h3>
+                <p>
+                  A responsive app that displays company user data with detailed
+                  profiles and statistics, using REST API integration.
+                </p>
+              </hgroup>
+              <footer>
+                <details>
+                  <summary>Features Included</summary>
+                  <p>
+                    User list with API data, Detailed user info, Company
+                    overview, Statistics dashboard
+                  </p>
+                </details>
+              </footer>
+              <div>
+                <a href="https://vtpct5.csb.app/" class="secondary">🖥️ Demo</a>
+                <a
+                  href="https://codesandbox.io/p/sandbox/machine-coding-round-ir5-vtpct5"
+                  class="outline"
+                  >⚙️ Code</a
+                >
+              </div>
+            </article>
+          </group>
+
+          <!-- Project: Shopie -->
+          <group>
+            <figure>
+              <img
+                src="https://picsum.photos/id/835/800/400"
+                alt="Shopie Project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Shopie</h3>
+                <p>
+                  A shopping app that displays trending products, a product
+                  list, and detailed product views with multiple images.
+                </p>
+              </hgroup>
+              <footer>
+                <details>
+                  <summary>Features Included</summary>
+                  <p>
+                    Product listing, Product details page, Trending items
+                    section, Navigation
+                  </p>
+                </details>
+              </footer>
+              <div>
+                <a href="https://53vrk5.csb.app/" class="secondary">🖥️ Demo</a>
+                <a
+                  href="https://codesandbox.io/p/sandbox/53vrk5"
+                  class="outline"
+                  >⚙️ Code</a
+                >
+              </div>
+            </article>
+          </group>
+
+          <!-- Project: Inventory Tracker -->
+          <group>
+            <figure>
+              <img
+                src="https://picsum.photos/id/526/800/400"
+                alt="Inventory Tracker Project"
+              />
+            </figure>
+            <article>
+              <hgroup>
+                <h3>Inventory Tracker</h3>
+                <p>
+                  An inventory management form that stores product details,
+                  calculates costs, and displays submitted data.
+                </p>
+              </hgroup>
+              <footer>
+                <details>
+                  <summary>Features Included</summary>
+                  <p>
+                    Product entry form, Quantity & cost calculator, Vendor
+                    details, Summary display
+                  </p>
+                </details>
+              </footer>
+              <div>
+                <a href="https://x7dvjr.csb.app/" class="secondary">🖥️ Demo</a>
+                <a
+                  href="https://codesandbox.io/p/sandbox/x7dvjr"
+                  class="outline"
+                  >⚙️ Code</a
+                >
+              </div>
+            </article>
+          </group>
+        </div>
+        <div class="grid">
+          <!-- Project 1 -->
           <group>
             <figure>
               <img
@@ -67,18 +185,17 @@
             </figure>
             <article>
               <hgroup>
-                <h3>Smart Markter</h3>
+                <h3>Smart Marketer</h3>
                 <p>
-                  A compreshensive toolkit for marketers campagin tracking,
-                  social media schedualing and messaging tools
+                  A comprehensive toolkit for marketers: campaign tracking,
+                  social media scheduling, and messaging tools.
                 </p>
               </hgroup>
               <footer>
                 <details>
                   <summary>Apps Included</summary>
-                  r.
                   <p>
-                    Tweet link generator , WAMI link generator, Github Link
+                    Tweet link generator, WAMI link generator, GitHub link
                     generator
                   </p>
                 </details>
@@ -93,7 +210,8 @@
               </div>
             </article>
           </group>
-          <!-- //this is my project 2 -->
+
+          <!-- Project 2 -->
           <group>
             <figure>
               <img
@@ -105,16 +223,16 @@
               <hgroup>
                 <h3>FitTrack</h3>
                 <p>
-                  All in-one fitness tracker ,for workout planning, tracking
-                  calories , steps and water intake.
+                  An all-in-one fitness tracker for workout planning, calories,
+                  steps, and water intake.
                 </p>
               </hgroup>
               <footer>
                 <details>
                   <summary>Apps Included</summary>
                   <p>
-                    Workout planner, Nutrition Tracker , Goal Setting , Water
-                    Intake
+                    Workout planner, Nutrition tracker, Goal setting, Water
+                    intake monitor
                   </p>
                 </details>
               </footer>
@@ -128,7 +246,8 @@
               </div>
             </article>
           </group>
-          <!-- //this is my project 3 -->
+
+          <!-- Project 3 -->
           <group>
             <figure>
               <img
@@ -140,14 +259,14 @@
               <hgroup>
                 <h3>Friendly Finance</h3>
                 <p>
-                  Personal finance management with expense tracking , budget
-                  planning and investment suggestion
+                  Personal finance management with expense tracking, budget
+                  planning, and investment suggestions.
                 </p>
               </hgroup>
               <footer>
                 <details>
                   <summary>Apps Included</summary>
-                  <p>Expense Tracker , Budget Planning , Saving goals</p>
+                  <p>Expense Tracker, Budget Planner, Saving Goals</p>
                 </details>
               </footer>
               <div>
@@ -161,143 +280,138 @@
             </article>
           </group>
         </div>
+
         <div class="grid">
-          <!-- //this is my project 4 -->
-          <group>
+          <!-- Project 4 -->
+          <article>
             <figure>
               <img
                 src="https://picsum.photos/id/26/800/400"
                 alt="Trip Planner Project"
               />
             </figure>
-            <article>
-              <hgroup>
-                <h3>TripWise</h3>
+            <hgroup>
+              <h3>TripWise</h3>
+              <p>
+                A trip planner app for discovering and planning trips within
+                budget.
+              </p>
+            </hgroup>
+            <footer>
+              <details>
+                <summary>Apps Included</summary>
                 <p>
-                  A trip planner application for planning budget that allows
-                  users to do discovers plan trips within budget
+                  Fuel cost calculator, Itinerary planner, Speed estimator,
+                  Travel time calculator
                 </p>
-              </hgroup>
-              <footer>
-                <details>
-                  <summary>Apps Included</summary>
-                  <p>
-                    Fuel cost calculator , Itinerary cost calculator , Average
-                    speed estimator and Travel time esitimator.
-                  </p>
-                </details>
-              </footer>
-              <div>
-                <a href="#" class="secondary">🖥️ Demo</a>
-                <a href="#" class="outline">⚙️ Code</a>
-              </div>
-            </article>
-          </group>
-          <!-- //this is my project 5 -->
-          <group>
+              </details>
+            </footer>
+            <div>
+              <a href="https://h624l6.csb.app/" class="secondary">🖥️ Demo</a>
+              <a
+                href="https://codesandbox.io/p/sandbox/tripwise-tool-h624l6"
+                class="outline"
+                >⚙️ Code</a
+              >
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article>
             <figure>
               <img
                 src="https://picsum.photos/id/160/800/400"
                 alt="Gif Project"
               />
             </figure>
-            <article>
-              <hgroup>
-                <h3>GifPal</h3>
+            <hgroup>
+              <h3>GifPal</h3>
+              <p>
+                A Pinterest-like GIF app that lets users save, discover, and
+                organize GIFs into collections.
+              </p>
+            </hgroup>
+            <footer>
+              <details>
+                <summary>Apps Included</summary>
                 <p>
-                  A pintrest like application for Gifs that allows users to
-                  users save , discover and organized Gifs into customized
-                  collections
+                  GIF explorer, Collection manager, Add GIFs, Top rated GIFs,
+                  Most liked GIFs
                 </p>
-              </hgroup>
-              <footer>
-                <details>
-                  <summary>Apps Included</summary>
-                  <p>
-                    Gif explorer , colllection mamnager , Add new Gifs, explore
-                    top rated Gifs, and most like Gifs
-                  </p>
-                </details>
-              </footer>
-              <div>
-                <a href="https://3xvyj6.csb.app/index.html" class="secondary">🖥️ Demo</a>
-                <a href="https://codesandbox.io/p/sandbox/weathered-brook-3xvyj6" class="outline">⚙️ Code</a>
-              </div>
-            </article>
-          </group>
-          <!-- //this is my project 6 -->
-          <group>
+              </details>
+            </footer>
+            <div>
+              <a href="#" class="secondary">🖥️ Demo</a>
+              <a href="#" class="outline">⚙️ Code</a>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article>
             <figure>
               <img
                 src="https://picsum.photos/id/119/800/400"
                 alt="Portfolio Project"
               />
             </figure>
-            <article>
-              <hgroup>
-                <h3>Personal Project</h3>
+            <hgroup>
+              <h3>Personal Portfolio</h3>
+              <p>
+                A responsive developer portfolio built with HTML, CSS,
+                JavaScript, and PicoCSS for minimal design.
+              </p>
+            </hgroup>
+            <footer>
+              <details>
+                <summary>Apps Included</summary>
                 <p>
-                  A responsive developer portfolio built with HTML, CSS,
-                  JavaScript using PicoCSS for clean, semantic design with
-                  minimal style.
+                  Project showcase, Skills display, Contact details, Theme
+                  switcher
                 </p>
-              </hgroup>
-              <footer>
-                <details>
-                  <summary>Apps Included</summary>
-                  <p>
-                    project showcase , skill Display , contact Details and Theme
-                    switcher
-                  </p>
-                </details>
-              </footer>
-              <div>
-                <a href="https://3xwdqp.csb.app/" class="secondary">🖥️ Demo</a>
-                <a
-                  href="https://codesandbox.io/p/devbox/portfolio-tusharkumar-forked-3xwdqp"
-                  class="outline"
-                  >⚙️ Code</a
-                >
-              </div>
-            </article>
-          </group>
+              </details>
+            </footer>
+            <div>
+              <a href="https://3xwdqp.csb.app/" class="secondary">🖥️ Demo</a>
+              <a
+                href="https://codesandbox.io/p/devbox/portfolio-tusharkumar-forked-3xwdqp"
+                class="outline"
+                >⚙️ Code</a
+              >
+            </div>
+          </article>
         </div>
       </section>
+
+      <!-- Skills Section -->
       <section id="skills">
         <hgroup>
           <h2>Technologies</h2>
-          <h3>Skills i'am currently learning and practicing</h3>
+          <h3>Skills I'm currently learning and practicing</h3>
         </hgroup>
         <hr />
         <div class="grid">
           <article>
-            <header>
-              <h3>Frontend</h3>
-            </header>
+            <header><h3>Frontend</h3></header>
             <ul>
               <li>HTML & CSS</li>
               <li>JavaScript</li>
-              <li>React Js</li>
-              <li>Bootstrap & Pico CSS</li>
+              <li>React.js</li>
+              <li>Bootstrap & PicoCSS</li>
             </ul>
           </article>
           <article>
-            <header>
-              <h3>Backend</h3>
-            </header>
+            <header><h3>Backend</h3></header>
             <ul>
-              <li>Node JS</li>
-              <li>Express JS</li>
-              <li>Mongo DB</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
               <li>RESTful APIs</li>
             </ul>
           </article>
           <article>
-            <header>
-              <h3>Tools</h3>
-            </header>
+            <header><h3>Tools</h3></header>
             <ul>
-              <li>Git & Github</li>
+              <li>Git & GitHub</li>
               <li>VS Code</li>
               <li>npm</li>
               <li>Postman</li>
@@ -305,28 +419,31 @@
           </article>
         </div>
       </section>
+
+      <!-- Connect Section -->
       <section id="connect">
         <hgroup>
           <h2>Connect</h2>
-          <h3>Want to talk amything tech? I am just a ping away!</h3>
+          <h3>Want to talk tech? I’m just a ping away!</h3>
         </hgroup>
         <hr />
         <div class="grid">
           <article>
-            <header>
-              <h3>Social</h3>
-            </header>
-            <p href="tusharkumar74761@gmail.com">
-              <a>tusharkumar74761@gmail.com</a>
+            <header><h3>Email</h3></header>
+            <p>
+              <a href="mailto:tusharkumar74761@gmail.com"
+                >tusharkumar74761@gmail.com</a
+              >
             </p>
           </article>
           <article>
-            <header>
-              <h3>Social</h3>
-            </header>
-            <p href="tusharkumar74761@gmail.com">
-              <a href="#">Github</a> . <a href="#">linkdin</a> .
-              <a href="#">Twitter</a> .
+            <header><h3>Social</h3></header>
+            <p>
+              <a href="https://github.com/Tushar13Kumar">GitHub</a> ·
+              <a href="https://www.linkedin.com/in/tushar-kumar-199134231/"
+                >LinkedIn</a
+              >
+              · <a href="https://x.com/KumarTusha29635">Twitter</a>
             </p>
           </article>
         </div>
@@ -337,9 +454,8 @@
     <footer class="container neog-footer">
       <small>
         © 2025 Tushar Kumar • Built with
-        <a href="https://picocss.com">PicoCSS</a> | Learning full stack
-        development
-        
+        <a href="https://picocss.com">PicoCSS</a> | Learning Full Stack
+        Development
       </small>
     </footer>
   </body>
