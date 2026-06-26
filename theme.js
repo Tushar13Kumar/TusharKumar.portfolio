@@ -7,23 +7,23 @@ function setTheme(themeName) {
 
 function toggelTheme(event) {
   if (event.target.checked) {
-    setTheme("dark");
-  } else {
     setTheme("light");
+  } else {
+    setTheme("dark");
   }
 }
 
 function setInitinalTheme() {
   const preferDarkMode = window.matchMedia(
-    "(prefer-colour-scheme: dark)"
+    "(prefer-colour-scheme: light)"
   ).matches;
 
   if (preferDarkMode) {
     themeToggel.checked = true;
-    setTheme("dark");
+    setTheme("light");
   } else {
     themeToggel.checked = false;
-    setTheme("light");
+    setTheme("dark");
   }
 }
 
